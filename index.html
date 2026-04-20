@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Škola Paličkování U Krajky</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">ŠKOLA PALIČKOVÁNÍ U KRAJKY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Úvodní stránka</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kurzy.html">Kurzy a techniky</a></li>
+                    <li class="nav-item"><a class="nav-link" href="prihlaseni.html">Přihlášení do kurzu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailto:info@ukrajky.cz">Napište nám</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold text-primary">ŠKOLA PALIČKOVÁNÍ U KRAJKY</h1>
+                    <p class="lead text-muted">krajka - paličky - podvinky - ruční práce - nové termíny - tradiční techniky</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="favicon.svg" alt="Logo školy" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section class="welcome mb-5">
+            <h2 class="text-center mb-4">Vítejte ve škole paličkování</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="fs-5">Naše škola nabízí výuku tradičního paličkování pro úplné začátečníky i pokročilé zájemce. Učíme různé techniky, vyrábíme dekorace, šperky i klasické krajky.</p>
+                    <p class="fs-5">Výuka probíhá v menších skupinách a vedou ji zkušené lektorky. Na webu najdete základní informace o kurzech a možnostech zápisu.</p>
+                    <p class="fs-5">Přihlášení do kurzu probíhá přes formulář, ve kterém student vyplní údaje o sobě, vybraný kurz a přiloží obrázek oblíbeného podvinku.</p>
+                </div>
+                <div class="col-md-4">
+                    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="palickovani1.jpg" class="d-block w-100" alt="Paličkování 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="palickovani2.webp" class="d-block w-100" alt="Paličkování 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="palickovani3.jpg" class="d-block w-100" alt="Paličkování 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info card shadow mb-5">
+            <div class="card-body">
+                <h3 class="card-title">Základní informace</h3>
+                <dl class="row">
+                    <dt class="col-sm-3">Adresa</dt>
+                    <dd class="col-sm-9">Krajkářská 8, 544 01 Dvůr Králové</dd>
+                    <dt class="col-sm-3">Telefon</dt>
+                    <dd class="col-sm-9">+420 603 456 789</dd>
+                    <dt class="col-sm-3">E-mail</dt>
+                    <dd class="col-sm-9">info@ukrajky.cz</dd>
+                    <dt class="col-sm-3">Otevírací doba</dt>
+                    <dd class="col-sm-9">Po-Pá 9:00-17:00</dd>
+                </dl>
+            </div>
+        </section>
+    </main>
+
+    <aside class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">NOVINKY</h3>
+                            <ul class="list-unstyled">
+                                <li><span class="badge bg-success">NOVÉ!</span> podzimní kurz volný</li>
+                                <li><span class="badge bg-success">NOVÉ!</span> nový lektor pro šperky</li>
+                                <li><span class="badge bg-success">NOVÉ!</span> výstava krajky v listopadu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">OBLÍBENÉ</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Začátečníci</li>
+                                <li class="list-group-item">Vánoční krajka</li>
+                                <li class="list-group-item">Šperky z krajky</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <footer class="bg-primary text-white py-4">
+        <div class="container text-center">
+            <p>Web od roku 2002 | Počet návštěv: 001284</p>
+            <p>Toto je školní ukázka webu určeného k rekonstrukci.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

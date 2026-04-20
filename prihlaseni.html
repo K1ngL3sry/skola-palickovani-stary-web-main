@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přihlášení do kurzu - Škola Paličkování U Krajky</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">ŠKOLA PALIČKOVÁNÍ U KRAJKY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Úvodní stránka</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kurzy.html">Kurzy a techniky</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="prihlaseni.html">Přihlášení do kurzu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailto:info@ukrajky.cz">Napište nám</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-light py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-primary text-center">PŘIHLÁŠENÍ DO KURZU</h1>
+            <p class="lead text-muted text-center">krajka - paličky - podvinky - ruční práce - nové termíny - tradiční techniky</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section class="form-section">
+            <h2 class="text-center mb-4">Přihláška do kurzu</h2>
+            <p class="text-center mb-4">Vyplňte prosím následující formulář pro přihlášení do vybraného kurzu. Po odeslání vás budeme kontaktovat s dalšími instrukcemi.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="#" method="post" enctype="multipart/form-data" class="registration-form card shadow p-4">
+                        <fieldset class="mb-4">
+                            <legend class="h5 text-primary">Osobní údaje</legend>
+                            <div class="mb-3">
+                                <label for="jmeno" class="form-label">Jméno a příjmení *</label>
+                                <input type="text" class="form-control" id="jmeno" name="jmeno" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefon" class="form-label">Telefon *</label>
+                                <input type="tel" class="form-control" id="telefon" name="telefon" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="adresa" class="form-label">Adresa</label>
+                                <textarea class="form-control" id="adresa" name="adresa" rows="3"></textarea>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="mb-4">
+                            <legend class="h5 text-primary">Výběr kurzu</legend>
+                            <div class="mb-3">
+                                <label for="kurz" class="form-label">Vyberte kurz *</label>
+                                <select class="form-select" id="kurz" name="kurz" required>
+                                    <option value="">-- Vyberte --</option>
+                                    <option value="zaklady">Základy paličkování</option>
+                                    <option value="tradicni">Tradiční vzory</option>
+                                    <option value="sperky">Šperky z krajky</option>
+                                    <option value="vanoce">Vánoční ozdoby</option>
+                                    <option value="jemna">Jemná krajka</option>
+                                    <option value="detske">Dětské paličkování</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="zkusenosti" class="form-label">Úroveň zkušeností</label>
+                                <select class="form-select" id="zkusenosti" name="zkusenosti">
+                                    <option value="zacatecnici">Začátečníci</option>
+                                    <option value="pokrocili">Pokročilí</option>
+                                    <option value="mirne-pokrocili">Mírně pokročilí</option>
+                                </select>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="mb-4">
+                            <legend class="h5 text-primary">Obrázek podvinku</legend>
+                            <div class="mb-3">
+                                <label for="obrazek" class="form-label">Přiložte obrázek vašeho oblíbeného podvinku</label>
+                                <input type="file" class="form-control" id="obrazek" name="obrazek" accept="image/*">
+                                <div class="form-text">Podporované formáty: JPG, PNG, GIF. Maximální velikost: 5 MB.</div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="mb-4">
+                            <legend class="h5 text-primary">Další informace</legend>
+                            <div class="mb-3">
+                                <label for="zprava" class="form-label">Zpráva (volitelná)</label>
+                                <textarea class="form-control" id="zprava" name="zprava" rows="4" placeholder="Napište nám, pokud máte nějaké speciální požadavky nebo otázky..."></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter" value="yes">
+                                <label class="form-check-label" for="newsletter">Chci dostávat novinky o kurzech a akcích školy.</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Odeslat přihlášku</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">TIPY PRO PŘIHLÁŠENÍ</h3>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle text-success"></i> Vyplňte všechna povinná pole označená *.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Připravte si obrázek podvinku předem.</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Kontaktujeme vás do 3 pracovních dnů.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Kontaktní informace</h3>
+                            <p><strong>Adresa:</strong> Krajkářská 8, 544 01 Dvůr Králové</p>
+                            <p><strong>Telefon:</strong> +420 603 456 789</p>
+                            <p><strong>E-mail:</strong> info@ukrajky.cz</p>
+                            <p><strong>Otevírací doba:</strong> Po-Pá 9:00-17:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <footer class="bg-primary text-white py-4">
+        <div class="container text-center">
+            <p>Toto je školní ukázka webu určeného k rekonstrukci.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* CSS proměnné pro snadnou změnu */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --accent-color: #f8f9fa;
+    --text-color: #212529;
+    --link-color: #0d6efd;
+    --visited-link-color: #6610f2;
+    --active-link-color: #dc3545;
+    --background-color: #ffffff;
+    --card-background: #ffffff;
+    --card-border-radius: 0.375rem;
+    --form-border-color: #ced4da;
+}
+
+/* Bootstrap overrides a vlastní styly */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+}
+
+.card {
+    border: none;
+    border-radius: var(--card-border-radius);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card-title {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.table {
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+}
+
+.table thead th {
+    border-bottom: 2px solid #dee2e6;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.alert {
+    border-radius: var(--card-border-radius);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+fieldset {
+    border: 1px solid var(--form-border-color);
+    border-radius: var(--card-border-radius);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--card-background);
+}
+
+legend {
+    font-weight: 600;
+    color: var(--primary-color);
+    padding: 0 0.5rem;
+    border: none;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+.carousel-item img {
+    border-radius: var(--card-border-radius);
+}
+
+/* Animace */
+.card,
+.btn,
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Responzivní úpravy */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    fieldset {
+        padding: 1rem;
+    }
+}
