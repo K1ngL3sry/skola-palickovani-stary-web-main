@@ -102,17 +102,24 @@ legend {
     transform: translateY(-1px);
 }
 
-/* Responzivní úpravy */
-@media (max-width: 768px) {
-    .display-4 {
-        font-size: 2rem;
-    }
+.lecturer-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
 
-    .card-body {
-        padding: 1rem;
-    }
+.lecturer-card .card-body {
+    flex-grow: 1;
+}
 
-    fieldset {
-        padding: 1rem;
-    }
+.lecturer-card .card-title {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.lecturer-card .card-text {
+    margin-bottom: 0.5rem;
+}
+
+.lecturer-card .card-text:last-child {
+    margin-bottom: 0;
 }
